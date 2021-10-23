@@ -16,18 +16,19 @@ body{
     background-color: hsl(185, 75%, 39%);
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 400;
-    overflow: hidden;
+
 }
 .container{
     min-height: 100vh;
     display: grid;
     place-items: center;
     position: relative;
+    overflow: hidden;
 }
 .card{
     background-color: white;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     margin: 0 auto;
     overflow: hidden;
     z-index: 1;
@@ -94,11 +95,11 @@ body{
 }
 
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 600px) {
     body {
-        background-position: right 50vw bottom 40vh, left 50vw top 70vh;
+        background-position: right 45vw bottom 25vh, left 45vw top 25vh;
     }
     .card {
-        width: 400px;
+        width: 75%;
     }
 }
