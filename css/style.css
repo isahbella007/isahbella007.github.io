@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/*clear out default browser style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+    background-color: hsl(185, 75%, 39%);
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+}
+.container{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.card{
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 14px;
+}
+.card-header{
+    background-image: url("../images/bg-pattern-card.png");
+    background-size: cover;
+    height: 140px;
+}
+.avatar{
+    display: block;
+    height: 100px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    border: solid 4px white;
+    margin-block: -50px 15px;
+    margin-inline: auto;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top:-15px;
+    flex-direction: row;
+}
+.person-name>p{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 8px 0 0 8px;
+}
+.person-age>p{
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: hsl(227, 10%, 46%);
+    margin: 8px 0 0 10px;
+}
+.location{
+    display: block;
+    text-align: center;
+    padding-top: 2px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+.card-footer{
+    /*background-color: yellow;*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-direction: row;
+    justify-items: center;
+    padding-top: 30px;
+}
+.value{
+    font-weight: 700;
+}
+.text{
+    font-weight:400;
+    color: hsl(227, 10%, 46%);
+}
+
+
+@media screen and (max-width: 414px) {
+    body {
+        background-position: right 50vw bottom 40vh, left 50vw top 70vh;
+    }
+    .card {
+        width: 400px;
+    }
+}
